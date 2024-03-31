@@ -25,7 +25,6 @@
 		
 		foreach($formedArray as $formedArrayElement) {
 			foreach($formedArrayElement as $formedArrayTask) {
- 		        //echo "<pre>"; print_r($formedArrayTask); echo "</pre>";
   		        $taskDate = substr($formedArrayTask['createdDate'], 0, 10);
    		        $taskStatus = empty($formedArrayTask['closedBy']) ? "<span style='color: brown;'>Открыта</span>" : "<span style='color: white; background-color: green;'>Закрыта</span>";
     		    if ($taskStatus == "<span style='color: brown;'>Открыта</span>") continue;
